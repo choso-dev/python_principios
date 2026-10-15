@@ -84,7 +84,25 @@ print(not z)
 print(not y)
 
 
+# Identidad
 
+# is	¿son el mismo objeto?
+# is not	¿son objetos distintos?
+
+a = [1, 2]
+b = [1, 2]
+a == b      # True  (mismo contenido)
+a is b      # False (objetos distintos en memoria)
+
+
+# Pertenencia
+
+# in	¿está dentro de...?
+# not in	¿no está dentro de...?
+
+print("py" in "python")      # True
+print(3 in [1, 2, 3])        # True
+print("x" not in "abc")      # True
 
 
 
