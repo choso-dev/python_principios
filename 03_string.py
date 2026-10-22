@@ -113,3 +113,47 @@ print(f"{0.300:.1%}")
 
 
 # Metodos en string(IMPORTANTES)
+# para llamar un metodo hacer texto/varible.metodo()
+
+h = "hola MUNDO"
+# mayusculas y minusculas
+print(h.upper()) # todo en mayusculas
+print(h.lower()) # todo en minusculas
+print(h.capitalize()) # la primera letra en mayuscula
+print(h.title()) # cada palabra empieza por mayuscula
+print(h.swapcase()) # invierte 
+
+# Limpiar espacios
+s = "  hola  "
+print(s.strip()) # quita los epscios de los 2 lados
+print(s.lstrip()) # quita el epscio de la izquierda
+print(s.rstrip()) # quita los espacios de la derecha
+
+
+# buscar y contar
+s = "banana"
+print(s.find("n")) # nos de vuelve la posicion del primer caracter contrado
+print(s.find("x")) # nos devolvera -1 que significa que no hay  ese caracter
+print(s.index("n")) # hace lo mismo que find() pero con un detalle muy  critico
+# print(s.index("x")) al no encontrar el valor devuelve un error 
+print(s.count("a")) # cuenta cuantos de ese mismo caracter hay
+print(s.startswith("ban")) # si eso de encunetra al inicio de la cadena de texto
+print(s.endswith("ana")) # si se encuntra al final de la cadena de texto
+
+
+# Remplazar
+s = "hola"
+print(s.replace("o", "0")) # para emplazar todo ese caracter po uno diferente
+print("a b c".replace(" ", "-", 1)) # com el numero de decimos si aplca para todo o salmente el primero que encuentre
+
+
+# Dividir y unir
+print("a,b,c".split(",")) #separa por una lista pero la divide por la coma
+print("hola que tal?".split(" ")) # ahora es por espacios
+# ahroa queremos comvertir una lista en una cadena 
+print(" ".join(["a", "b", "c", "d"]))
+
+# concatenar metodos 
+texto = "            HoLa MunDITo DE pytHON    "
+print(texto)
+print(texto.strip().lower().title())
